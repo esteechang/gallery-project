@@ -9,12 +9,22 @@ const StyledDiv = styled.div`
     background-repeat: no-repeat;
     background-position: center;
 `
-
 const Slide = ({content}) => {
     return(
-        <StyledDiv content={content}> </StyledDiv>
+        <>
+        <StyledDiv content={content}> 
+        </StyledDiv>
 
+</>
     )
 }
 
+export const SlideContent = (data) => {
+    return (
+        <div style={{color: "red"}}>
+            {data.name}
+            {data.description}
+        </div>
+    )
+}
 export default Slide

@@ -1,0 +1,24 @@
+.thumbnail-bar {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  .thumbnail {
+    box-sizing: border-box;
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 5px;
+    border: 4px solid #FDFDFD;
+    border-radius: 0.2rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    cursor: pointer;
+  }
+  .thumbnail > img {
+    height: 100%;
+  }
