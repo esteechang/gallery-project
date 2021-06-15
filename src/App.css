@@ -22,3 +22,13 @@
 p {
   margin: 15px;
 }
+
+.image span { 
+  opacity: 0;
+  
+}
+
+.image:hover span {
+  opacity: 1;
+  
+}

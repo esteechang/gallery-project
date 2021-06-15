@@ -3,8 +3,8 @@ import {Image, ImgName ,ImgDescription} from "./img/Image";
 import LeftArrow from "./img/left.svg";
 import RightArrow from "./img/right.svg";
 import { ArrowContainer, ImageDiv } from "./styles/styledComponents";
-import "./App.css";
 import Thumbnail from "./Thumbnail";
+import "./App.css";
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,10 +49,11 @@ function App() {
             <p> {ImgDescription[currentIndex]}</p>
         </div>
 
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center" }} >
         {Image.map((img, index) => (
-          <Thumbnail key={index} img={img} handleThumbnailClick={() => {setCurrentIndex(index);}} ></Thumbnail>
+          <Thumbnail key={index} img={img} imgname={ImgName[index]} handleThumbnailClick={() => {setCurrentIndex(index);}} ></Thumbnail>
         ))}
+
       </div>
     </div>
   );

@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const ArrowContainer = styled.div`
 display: flex;
-position: absolute;
+position: fixed;
 top: 50%;
-${(props) => (props.direction === "right" ? `right: 200px` : `left: 200px`)};
+${(props) => (props.direction === "right" ? `right: 350px` : `left: 350px`)};
 height: 50px;
 width: 50px;
 justify-content: center;
@@ -36,3 +36,4 @@ export const StyledDiv = styled.div`
     cursor: pointer;
     margin: auto 5px;
 `
+
