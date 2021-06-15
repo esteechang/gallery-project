@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.imageGallery {
+  max-width:100%;
+  max-height:100%;
+}
+
+.imageDescription {
+  min-width: 35%;
+  max-width:40%;
+  position: absolute;
+  left: 50%;
+  bottom:10%;
+  transform: translate(-50%, -50%);
+  background-color: lightsteelblue;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+p {
+  margin: 15px;
+}

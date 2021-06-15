@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Slider from './components/Slider'
+import App from './App';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Slider />
+    <App />
   </React.StrictMode>,
-  document.querySelector('.main')
+  document.getElementById('root')
 );
 
