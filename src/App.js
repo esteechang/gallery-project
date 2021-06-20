@@ -49,9 +49,11 @@ function App() {
             <p> {ImgDescription[currentIndex]}</p>
         </div>
 
-      <div style={{ display: "flex", justifyContent: "center" }} >
+      <div className="thumbnailContainer">
         {Image.map((img, index) => (
-          <Thumbnail key={index} img={img} imgname={ImgName[index]} handleThumbnailClick={() => {setCurrentIndex(index);}} ></Thumbnail>
+          <Thumbnail 
+          style={index === currentIndex ? {border: '1px solid red'} : null}
+          key={index} img={img} imgname={ImgName[index]} handleThumbnailClick={() => {setCurrentIndex(index)}} ></Thumbnail>
         ))}
 
       </div>
