@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const ArrowContainer = styled.div`
 display: flex;
-position: fixed;
+position: absolute;
 top: 50%;
-${(props) => (props.direction === "right" ? `right: 350px` : `left: 350px`)};
+${(props) => (props.direction === "right" ? `right: 250px` : `left: 250px`)};
 height: 50px;
 width: 50px;
 justify-content: center;
@@ -27,13 +27,19 @@ overflow: hidden;
 `
 
 export const StyledDiv = styled.div`
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background-image: url(${props => props.img});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    margin: auto 5px;
+    margin: auto 10px;
+    &:hover {
+      transform: scale(1.1);
+    }
+    // &:active{
+    //   border: 1px solid #e6007e;
+    // }
 `
 

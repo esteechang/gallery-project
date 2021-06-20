@@ -25,10 +25,24 @@ p {
 
 .image span { 
   opacity: 0;
-  
 }
 
 .image:hover span {
   opacity: 1;
-  
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+span {
+  position: absolute;
+  bottom:  100%;
+  width: 12px;
+  left: 0%;
+  font-size: 10px;
+}
+
+.image:active {
+  border: 2px solid red;
 }
